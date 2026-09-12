@@ -1,0 +1,30 @@
+<!-- LinkQT Icon Mark — Gradient version (indigo→violet)
+     For use where a richer, more modern feel is appropriate (landing pages, social media).
+     Degrades gracefully: swap <rect fill="url(#g)"> to fill="#4F46E5" for flat fallback.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img">
+  <title>LinkQT</title>
+  <desc>LinkQT icon mark — indigo to violet gradient</desc>
+
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <!-- Clip everything to the rounded rect so the tail exits cleanly -->
+    <clipPath id="clip">
+      <rect width="64" height="64" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <rect width="64" height="64" rx="14" fill="url(#g)"/>
+
+  <g clip-path="url(#clip)" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round">
+    <!-- L: lean vertical + short horizontal -->
+    <polyline points="13,10 13,48 22,48" stroke-width="5"/>
+    <!-- Q: circle, slightly smaller and leaner -->
+    <circle cx="41" cy="26" r="11" stroke-width="5"/>
+    <!-- Q tail: true 45° angle, starts at circle surface, clips cleanly at right border -->
+    <line x1="49" y1="34" x2="74" y2="59" stroke-width="4.5"/>
+  </g>
+</svg>
